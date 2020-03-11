@@ -1,0 +1,7 @@
+FROM Ubuntu
+
+RUN apt-get update
+
+RUN apt-get install php libapache2-mod-php php-mysql
+
+RUN php -S 0.0.0.0:9000
